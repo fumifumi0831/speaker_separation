@@ -19,6 +19,8 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+sample_data/
+sample_scripts/
 
 # 認証情報
 *.json

@@ -2,7 +2,12 @@ import boto3
 import json
 import time
 import uuid
+import os
 from urllib.parse import urlparse
+from dotenv import load_dotenv
+
+# .envファイルから環境変数を読み込む
+load_dotenv()
 
 def transcribe_with_speaker_diarization(audio_file_uri, language_code='ja-JP', max_speakers=10):
     """
